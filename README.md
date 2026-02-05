@@ -2,7 +2,7 @@
 
 ![SignSpeak AI](https://img.shields.io/badge/AI-Powered-blue) ![Flask](https://img.shields.io/badge/Flask-2.3.3-green) ![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10.7-orange) ![Python](https://img.shields.io/badge/Python-3.x-yellow)
 
-## 🎯 Overview
+##  Overview
 
 **SignSpeak AI** is a revolutionary real-time sign language translation system powered by artificial intelligence. The application uses computer vision and machine learning to detect hand gestures through a webcam, recognize sign language patterns, and translate them into text with multilingual support. This accessibility-first solution aims to break communication barriers for the deaf and hard-of-hearing community.
 
@@ -11,16 +11,16 @@ To make technology accessible for everyone by providing seamless, real-time sign
 
 ---
 
-## ✨ Key Features
+##  Key Features
 
-### 🎥 Real-Time Sign Language Detection
+###  Real-Time Sign Language Detection
 - **Live Video Processing**: Captures webcam feed at ~30 FPS for smooth detection
 - **Hand Landmark Tracking**: Uses MediaPipe Holistic to track 21 landmarks on each hand (42 total)
 - **Bilateral Detection**: Supports both left and right hand gesture recognition
 - **Stability Algorithm**: Implements a stability threshold (5 consecutive frames) to prevent false positives
 - **Visual Feedback**: Draws hand landmarks and connections on video feed in real-time
 
-### 🌐 Multilingual Translation
+###  Multilingual Translation
 - **Supported Languages**:
   - Hindi (हिंदी)
   - Kannada (ಕನ್ನಡ)
@@ -29,19 +29,19 @@ To make technology accessible for everyone by providing seamless, real-time sign
 - **Google Translate Integration**: Uses `googletrans` API for accurate translations
 - **Text-to-Speech**: Automatic audio playback of detected signs and translations
 
-### 🔐 User Authentication System
+###  User Authentication System
 - **JWT-based Authentication**: Secure token-based authentication with 24-hour expiration
 - **User Registration**: Create accounts with username/password
 - **Login System**: Secure login with credential validation
 - **Session Management**: Persistent sessions using localStorage
 - **Protected Routes**: Detection features require authentication
 
-### 💬 Feedback System
+###  Feedback System
 - **User Feedback Collection**: Allows users to submit feedback
 - **Timestamped Entries**: Each feedback entry includes submission timestamp
 - **JSON Storage**: Feedback stored in `feedback.json` for easy retrieval
 
-### 🎨 Modern UI/UX
+###  Modern UI/UX
 - **Glassmorphism Design**: Beautiful frosted glass effect with backdrop blur
 - **Gradient Animations**: Dynamic color gradients and smooth transitions
 - **Responsive Layout**: Mobile-friendly design that adapts to all screen sizes
@@ -51,7 +51,7 @@ To make technology accessible for everyone by providing seamless, real-time sign
 
 ---
 
-## 🏗️ Technical Architecture
+##  Technical Architecture
 
 ### System Architecture
 
@@ -136,7 +136,7 @@ To make technology accessible for everyone by providing seamless, real-time sign
 
 ---
 
-## 📦 System Requirements
+##  System Requirements
 
 ### Hardware Requirements
 - **Webcam**: Required for real-time sign detection
@@ -188,7 +188,7 @@ The application will start on `http://127.0.0.1:5000/`
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 Signspeak-AI/
@@ -427,7 +427,7 @@ lang_codes = {
 
 ---
 
-## 🤖 Machine Learning Model
+##  Machine Learning Model
 
 ### Model Details
 - **File**: `body_language.pkl` (1.7 MB)
@@ -460,7 +460,7 @@ Each hand provides 84 features:
 
 ---
 
-## 🎨 Frontend Features
+##  Frontend Features
 
 ### Design Principles
 - **Glassmorphism**: Frosted glass effect with `backdrop-filter: blur(20px)`
@@ -524,7 +524,7 @@ Each hand provides 84 features:
 
 ---
 
-## 🔒 Security Features
+##  Security Features
 
 ### 1. JWT Authentication
 - **Algorithm**: HS256 (HMAC with SHA-256)
@@ -545,7 +545,7 @@ Each hand provides 84 features:
 - **Token Validation**: Server-side verification
 - **Unauthorized Access**: Redirects to login
 
-### ⚠️ Security Recommendations for Production
+###  Security Recommendations for Production
 1. **Hash Passwords**: Use bcrypt/argon2 instead of plain text
 2. **HTTPS**: Enable SSL/TLS encryption
 3. **Environment Variables**: Store secret keys in `.env` file
@@ -556,7 +556,7 @@ Each hand provides 84 features:
 
 ---
 
-## 📖 Usage Guide
+##  Usage Guide
 
 ### For End Users
 
@@ -636,7 +636,7 @@ self.holistic = mp_holistic.Holistic(
 
 ---
 
-## ⚙️ Configuration
+##  Configuration
 
 ### Application Settings
 Edit `app.py`:
@@ -673,7 +673,7 @@ MODEL_FILE = 'body_language.pkl'
 
 ---
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -725,7 +725,7 @@ MODEL_FILE = 'body_language.pkl'
 
 ---
 
-## 🚀 Future Enhancements
+##  Future Enhancements
 
 ### Planned Features
 - [ ] **Database Integration**: Replace JSON with PostgreSQL/MongoDB
@@ -757,7 +757,7 @@ MODEL_FILE = 'body_language.pkl'
 
 ---
 
-## 🤝 Contributing
+## Contributing
 
 We welcome contributions! Here's how you can help:
 
@@ -797,14 +797,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 👥 Authors
-
-- **Development Team**: SignSpeak AI Contributors
-- **Contact**: [Your Email/GitHub]
-
----
-
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **MediaPipe**: Google's ML framework for hand tracking
 - **Flask**: Lightweight web framework
@@ -815,12 +808,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-## 📞 Support
-
+##  Support
 For support, please:
 - Open an issue on GitHub
-- Email: support@signspeak-ai.com (if applicable)
-- Join our Discord community (if applicable)
+- Email: sthwkacharya@gmail.com
 
 ---
 
@@ -834,7 +825,5 @@ For support, please:
 - **Translation Languages**: 3 (Hindi, Kannada, Malayalam)
 
 ---
-
-**Made with ❤️ for the deaf and hard-of-hearing community**
 
 *Breaking barriers, one sign at a time.*
