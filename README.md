@@ -2,28 +2,6 @@
 
 ![SignSpeak AI](https://img.shields.io/badge/AI-Powered-blue) ![Flask](https://img.shields.io/badge/Flask-2.3.3-green) ![MediaPipe](https://img.shields.io/badge/MediaPipe-0.10.7-orange) ![Python](https://img.shields.io/badge/Python-3.x-yellow)
 
-## 📋 Table of Contents
-- [Overview](#overview)
-- [Key Features](#key-features)
-- [Technical Architecture](#technical-architecture)
-- [Technology Stack](#technology-stack)
-- [System Requirements](#system-requirements)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Core Functionality](#core-functionality)
-- [API Endpoints](#api-endpoints)
-- [Machine Learning Model](#machine-learning-model)
-- [Frontend Features](#frontend-features)
-- [Security Features](#security-features)
-- [Usage Guide](#usage-guide)
-- [Configuration](#configuration)
-- [Troubleshooting](#troubleshooting)
-- [Future Enhancements](#future-enhancements)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
 ## 🎯 Overview
 
 **SignSpeak AI** is a revolutionary real-time sign language translation system powered by artificial intelligence. The application uses computer vision and machine learning to detect hand gestures through a webcam, recognize sign language patterns, and translate them into text with multilingual support. This accessibility-first solution aims to break communication barriers for the deaf and hard-of-hearing community.
