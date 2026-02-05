@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-dark-900 text-white antialiased;
+    font-family: 'Inter', system-ui, sans-serif;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10;
+  }
+
+  .glass-hover {
+    @apply hover:bg-white/10 transition-all duration-300;
+  }
+
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-light via-primary to-orange-500;
+  }
+
+  .glow {
+    box-shadow: 0 0 20px rgba(255, 107, 74, 0.3);
+  }
+
+  .glow-hover:hover {
+    box-shadow: 0 0 30px rgba(255, 107, 74, 0.5);
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff6b4a;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff8566;
+}
+
+/* Animated background */
+.animated-bg {
+  background: radial-gradient(circle at 20% 50%, rgba(255, 107, 74, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 133, 102, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 40% 80%, rgba(255, 107, 74, 0.1) 0%, transparent 50%);
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-20px) rotate(5deg);
+  }
+}
